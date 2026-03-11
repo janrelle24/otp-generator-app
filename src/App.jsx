@@ -9,7 +9,7 @@ function App() {
   const generateOtp = () =>{
     const code = String(Math.floor(Math.random() * 1000000)).padStart(6, "0");
     setOtp(code);
-    setTime(5);
+    setTime(30);
   }
   useEffect(() =>{
     if(time > 0){
